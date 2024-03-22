@@ -8,10 +8,10 @@ export function Footer() {
   return (
     <footer className="bg-slate-50">
       <Container>
-        <div className="py-16">
+        <div className="py-2 flex justify-between items-center">
           <Logo className="mx-auto h-10 w-auto" />
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
+          <nav className=" text-sm" aria-label="quick links">
+            <div className=" flex justify-center content-center gap-x-2">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
@@ -40,7 +40,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} TaxPal. All rights
+            Copyright &copy; {new Date().getFullYear()} Limelight Prep. All rights
             reserved.
           </p>
         </div>

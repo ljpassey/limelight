@@ -123,7 +123,7 @@ function Feature({
       <div
         className={clsx(
           'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500',
+          isActive ? 'bg-lime-500' : 'bg-slate-500',
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -133,7 +133,7 @@ function Feature({
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          isActive ? 'text-lime-600' : 'text-slate-600',
         )}
       >
         {feature.name}
@@ -192,7 +192,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-lime-600 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -205,7 +205,7 @@ function FeaturesDesktop() {
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={featureIndex !== selectedIndex}
                 >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-3 ring-slate-500/10">
                     <Image
                       className="w-full"
                       src={feature.image}
@@ -216,7 +216,7 @@ function FeaturesDesktop() {
                 </Tab.Panel>
               ))}
             </div>
-            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
+            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-4 ring-inset ring-lime-700" />
           </Tab.Panels>
         </>
       )}
@@ -229,12 +229,12 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-32 "
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
+        <div className="mx-auto max-w-3xl md:text-center mt-20">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            Career guidance from industry professionals.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Because you’d probably be a little confused if we suggested you

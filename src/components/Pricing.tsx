@@ -69,14 +69,14 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8',
+        featured ? 'order-first bg-lime-600 ring-4 ring-white mx-4 py-8 lg:order-none' : 'lg:py-8',
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
       <p
         className={clsx(
           'mt-2 text-base',
-          featured ? 'text-white' : 'text-slate-400',
+          featured ? 'text-white' : 'text-slate-100',
         )}
       >
         {description}
@@ -88,12 +88,12 @@ function Plan({
         role="list"
         className={clsx(
           'order-last mt-10 flex flex-col gap-y-3 text-sm',
-          featured ? 'text-white' : 'text-slate-200',
+          featured ? 'text-white' : 'text-slate-100',
         )}
       >
         {features.map((feature) => (
           <li key={feature} className="flex">
-            <CheckIcon className={featured ? 'text-white' : 'text-slate-400'} />
+            <CheckIcon className={featured ? 'text-white' : 'text-slate-100'} />
             <span className="ml-4">{feature}</span>
           </li>
         ))}
@@ -116,27 +116,26 @@ export function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="bg-slate-900 py-20 sm:py-32"
+      className="bg-lime-700 py-20 sm:py-32"
     >
       <Container>
         <div className="md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             <span className="relative whitespace-nowrap">
-              <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-blue-400" />
+              <SwirlyDoodle className="absolute left-0 top-1/2 h-[1em] w-full fill-lime-500" />
               <span className="relative">Simple pricing,</span>
             </span>{' '}
             for everyone.
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+          <p className="mt-4 text-lg text-slate-100">
+            At Limelight, we allow you to pick and choose which services you want!
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name="Starter"
+            name="Core"
             price="$9"
-            description="Good for anyone who is self-employed and just getting started."
+            description="Basic access to our Core features and services."
             href="/register"
             features={[
               'Send 10 quotes and invoices',
@@ -148,9 +147,9 @@ export function Pricing() {
           />
           <Plan
             featured
-            name="Small business"
+            name="Pro"
             price="$15"
-            description="Perfect for small / medium sized businesses."
+            description="Advanced access to both our Core and Pro features and services."
             href="/register"
             features={[
               'Send 25 quotes and invoices',
@@ -163,9 +162,9 @@ export function Pricing() {
             ]}
           />
           <Plan
-            name="Enterprise"
+            name="All Inclusive"
             price="$39"
-            description="For even the biggest enterprise companies."
+            description="The entire Limelight Prep package, with access to all our services."
             href="/register"
             features={[
               'Send unlimited quotes and invoices',
