@@ -30,7 +30,7 @@ export function Hero() {
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         At Limelight Prep, we ensure that our clients stand out in the job
         market with bespoke interview coaching and job preparation services.
-        We're dedicated to highlighting your unique skills and potential, paving
+        We are dedicated to highlighting your unique skills and potential, paving
         the way for you to secure your ideal career opportunity.
       </p>
       <div className="mt-10 flex justify-center gap-x-3">
