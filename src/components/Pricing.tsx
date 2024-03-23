@@ -69,7 +69,7 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-lime-600 ring-4 ring-white mx-4 py-8 lg:order-none' : 'lg:py-8',
+        featured ? 'order-first bg-lime-600 ring-4 ring-white mx-4 py-8 lg:order-none' : 'py-8 mx-4 ring-4 ring-lime-800',
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>

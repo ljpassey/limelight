@@ -114,7 +114,7 @@ export function Header() {
             </div>
           </div>
           <div className="flex w-auto items-center justify-between px-5  md:gap-x-8">
-            <div className="hidden lg:block">
+            <div className="lg:flex hidden gap-x-6">
               <NavLink href="/login">Sign in</NavLink>
               <Button href="/register">Get started</Button>
             </div>
