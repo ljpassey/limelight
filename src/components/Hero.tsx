@@ -34,7 +34,7 @@ export function Hero() {
         the way for you to secure your ideal career opportunity.
       </p>
       <div className="mt-10 flex justify-center gap-x-3">
-        <Button href="/register">Book a Free Consultation</Button>
+        <Button className=' px-4 py-2' href="/register">Book a Free Consultation</Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"

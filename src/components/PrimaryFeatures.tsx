@@ -73,7 +73,7 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className="max-w-2xl text-center md:mx-auto xl:max-w-none">
+        <div className="max-w-2xl text-center md:mx-auto ">
           <h2 className=" font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             Everything you need to land your next dream job.
           </h2>
@@ -86,7 +86,7 @@ export function PrimaryFeatures() {
           {({ selectedIndex }) => (
             <>
               <div className="-mx-4  overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <Tab.List className="relative  flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
+                <Tab.List className="relative  gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
                       key={feature.title}
@@ -103,7 +103,7 @@ export function PrimaryFeatures() {
                             'font-display text-lg ',
                             selectedIndex === featureIndex
                               ? 'text-white lg:text-white'
-                              : 'text-blue-100 hover:text-white lg:text-white',
+                              : 'text-white hover:text-white lg:text-white',
                           )}
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />

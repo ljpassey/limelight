@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'Limelight Prep',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Job preparation made simple for everyone',
 }
 
 const inter = Inter({
