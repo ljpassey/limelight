@@ -3,14 +3,15 @@ import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
 import { type Metadata } from 'next'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
 
 export const metadata: Metadata = {
   title: {
     template: '%s - Limelight Prep',
     default: 'Limelight Prep',
   },
-  description:
-    'Job preparation made simple for everyone',
+  description: 'Job preparation made simple for everyone',
 }
 
 const inter = Inter({
@@ -39,7 +40,11 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
-      <body className="flex h-full flex-col">{children}</body>
+      <body className="flex h-full flex-col">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
