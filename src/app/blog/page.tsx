@@ -1,6 +1,10 @@
+import { BlogHeader } from "@/components/BlogHeader"
+
 export default function Blog() {
     return (
-        
-        <h1>Blog</h1>
+        <div className="h-full">
+            <BlogHeader />
+            <h1>Blog</h1>
+        </div>
     )
 }

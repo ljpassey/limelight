@@ -29,15 +29,18 @@ export function Hero() {
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
         At Limelight Prep, we ensure that our clients stand out in the job
-        market with bespoke interview coaching and job preparation services.
-        We are dedicated to highlighting your unique skills and potential, paving
+        market with bespoke interview coaching and job preparation services. We
+        are dedicated to highlighting your unique skills and potential, paving
         the way for you to secure your ideal career opportunity.
       </p>
       <div className="mt-10 flex justify-center gap-x-3">
-        <Button className=' px-4 py-2' href="/register">Book a Free Consultation</Button>
+        <Button className=" m-4 p-4" href="/register">
+          Book a Free Consultation
+        </Button>
         <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"
+          className="m-4 p-4"
         >
           <svg
             aria-hidden="true"
